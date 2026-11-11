@@ -1,37 +1,62 @@
-# HelloWorld - Mi primera app con Expo
+HelloWorld
 
-**Estudiante:** Denny Elias Rene Yules  
-**Asignatura:** Programacion de Dispositivos Moviles  
-**Actividad:** Mi primera app en Expo (React Native y TypeScript)
+Asignación: Mi primera app en Expo (React Native)
 
-## Descripcion
+Estudiante: Denny Elias Rene Yules
+Matrícula: 18-MISN-2-002
+Asignatura: Programación de Dispositivos Móviles
+Profesor: Ing. Jaime Vilorio Green
 
-Aplicacion sencilla creada con Expo, React Native y TypeScript. Usa un componente `MainCard` que recibe una prop booleana `loading` y muestra "Cargando..." o "Contenido Listo!". En `App.tsx`, `useState` controla el estado y un boton permite alternarlo. El nombre se construye a partir de variables.
+Descripción
 
-## Requisitos
+En esta práctica creé una aplicación llamada HelloWorld utilizando Expo, React Native y TypeScript.
 
-- Node.js
-- pnpm
-- Expo Go en un dispositivo iOS o Android
-- Computadora y celular en la misma red Wi-Fi
+La aplicación muestra mi nombre, un botón y un componente llamado MainCard. Al presionar el botón, cambia el texto que aparece en pantalla utilizando el estado de la aplicación.
 
-## Ejecutar
+Requisitos
 
-```bash
+* Node.js instalado.
+* pnpm instalado.
+* Expo Go instalado en el celular.
+* Computadora y celular conectados a la misma red Wi-Fi.
+
+Creación y ejecución de la aplicación
+
+1. Creación del proyecto
+
+Primero creé mi aplicación HelloWorld utilizando la plantilla de TypeScript con el siguiente comando:
+
+pnpm create expo-app HelloWorld --template blank-typescript
+
+2. Acceso a la carpeta
+
+Después entré a la carpeta de mi proyecto utilizando:
+
+cd HelloWorld
+
+3. Instalación de dependencias
+
+Instalé las dependencias necesarias utilizando pnpm:
+
+pnpm install
+
+4. Ejecución de la aplicación
+
+Luego inicié el servidor de desarrollo de Expo mediante el siguiente comando:
+
+pnpm start
+
+5. Prueba en mi celular
+
+Finalmente, abrí Expo Go en mi iPhone y ejecuté la aplicación desde el servidor de desarrollo para comprobar su funcionamiento.
+
+Cómo ejecutar el proyecto desde GitHub
+
+Para descargar y ejecutar esta aplicación desde el repositorio, se pueden utilizar los siguientes comandos:
+
+git clone https://github.com/DennyRene15/HelloWorld.git
+cd HelloWorld
 pnpm install
 pnpm start
-```
 
-Abre Expo Go en el celular y escanea el codigo QR mostrado por Expo. En iPhone, puedes escanearlo con la camara.
-
-## Comportamiento
-
-| Estado | Boton | MainCard |
-| --- | --- | --- |
-| `isLoading = true` (inicial) | Mostrar | Cargando... |
-| `isLoading = false` | Cargar | Contenido Listo! |
-
-## Archivos principales
-
-- `App.tsx`: nombre, estado `useState`, boton y estilos centrados.
-- `MainCard.tsx`: componente con interface TypeScript y prop `loading`.
+Después de iniciar el servidor, se puede abrir la aplicación en Expo Go desde el celular.
