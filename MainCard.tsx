@@ -15,10 +15,14 @@ export default function MainCard({ loading }: MainCardProps) {
   );
 }
 
+
 const styles = StyleSheet.create({
   card: {
     padding: 16,
     marginVertical: 16,
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'gray',
   },
 });
+
